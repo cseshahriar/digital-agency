@@ -9,10 +9,36 @@
         White Smoke: #f4f4f4
         White: #fff
         Blach: #000
-
 ===================================*/
 
 /*  googe font uses 
     font-family: 'Raleway', sans-serif;
     font-family: 'Open Sans', sans-serif; 
 */
+
+/* =================================
+    Preloader
+===================================*/
+#preloader {
+    background-color: #fff; 
+    position: fixed;
+    top: 0;
+    bottom: 0;  
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+#status {
+    background-image: url("../img/preloader/preloader.gif"); 
+    background-repeat: no-repeat; 
+    width: 200px;
+    height: 200px;
+    /* center */
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    /* perfect center width and height div by 2 */
+    margin-top: -100px;
+    margin-left: -100px;  
+}
+
