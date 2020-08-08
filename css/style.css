@@ -174,3 +174,46 @@ section {
     color: #f4c613; 
 }
 
+/* =================================
+    content boxes
+===================================*/
+.context-box-lg{
+    padding: 120px 0;
+}
+
+/* =================================
+    Verticle Heading
+===================================*/
+.verticle-heading h5{
+    color: #f4c613;  
+    font-size: 14px;
+    font-weight: 500; 
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -63px;
+}
+.verticle-heading h2{
+    margin: 0 0 0 35px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}  
+
+/* =================================
+    About Section
+===================================*/
+#about-right p:first-child{
+    margin-bottom: 30px;
+}
+#about-bottom {
+    margin-top: 60px;
+}
+#about-bottom img{
+    margin: 0 auto; /* el center*/
+} 
