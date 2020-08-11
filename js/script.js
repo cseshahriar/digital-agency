@@ -7,11 +7,10 @@ $(window).on('load', function() {
 });
 
 
-/* =================================
-    Team carual
-===================================*/ 
+
  $(function() {
 
+    // team carusal
     $("#team-members").owlCarousel({
         items:2,
         autoplay:true,
@@ -23,4 +22,24 @@ $(window).on('load', function() {
         dots:false,
     });
 
-});
+
+    $('#progress-elements').waypoint(function(direction) {
+       
+        $(".progress-bar").each(function() {
+            $(this).animate({
+                width: $(this).attr("aria-valuenow") + "%"
+            }, 1000);  
+        });
+        
+       
+        this.destroy();
+        
+    }, { offset: 'bottom-in-view'});  
+ 
+
+}); 
+
+
+
+
+
