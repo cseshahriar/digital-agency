@@ -403,3 +403,28 @@ ul.social-list li a:hover{
     bottom: -8px;
     left: 30%;  
 }
+
+/* =================================
+    Statement
+===================================*/
+#statement {
+    background: url("../img/tech/tech-quote.jpg");
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#statement .context-box-lg {
+    background: rgba(0, 0, 0, .3); /* overlay for image upper text */
+}
+#tech-statement {}
+#tech-statement h3{
+    color: #fff;
+    font-size: 28px;line-height: 45px;
+}
+#tech-statement p{
+    font-size: 14px;
+    color: #f4c613; 
+    font-family: "Raleway", sans-serif;
+    margin-top: 8px;
+}
