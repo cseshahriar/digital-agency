@@ -44,8 +44,52 @@ $(function () {
 /* =================================
     Responsive Tabs
 ===================================*/
+// work when document structure load 
 $(function () {
 	$('#services-tabs').responsiveTabs({
 		animation: 'slide', // The panels will slide up and down
+	});
+});
+
+
+/* =================================
+    Portfolio
+===================================*/
+
+// first load imag and content 
+$(window).on('load', function () {
+
+	// init Isotope
+	$('#isotop-container').isotope({});
+
+	// filter items on button click
+	$('#isotop-filters').on('click', 'button', function () {
+
+		// get filter value 
+		var filterValue = $(this).attr('data-filter');
+
+		// filter portfolio
+		$('#isotop-container').isotope({
+			filter: filterValue
+		});
+
+		// active button
+		$("#isotop-filters").find('.active').removeClass('active');
+		$(this).addClass('active');
+
+	});
+
+});
+
+/* =================================
+    magnificPopup
+===================================*/
+$(function () {
+	$('#portfolio-wrapper').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		gallery: {
+			enabled: true
+		}
 	});
 });
