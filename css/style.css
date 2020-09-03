@@ -852,3 +852,71 @@ ul.social-list li a:hover {
 .author .author-name-des p {
 	margin: 0;
 }
+
+/* =================================
+    Pricing Table
+===================================*/
+#pricing {}
+#pricing-btn {}
+.pricing-table {
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+	box-shadow: 0 0 10px 0;
+	border-radius: 6px;
+	padding: 32px 21px;
+	-webkit-transition: all 400ms linear;
+	transition: all 400ms linear; 
+}
+.pricing-table:hover {
+	background: #f4c613; 
+}
+.pricing-table .type h4 {
+	color: #f4c613;
+	font-size: 24px;
+	margin-bottom: 25px;
+}
+.pricing-table .price {
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 24px 0;
+}
+.pricing-table .price h2 {
+	position: relative;
+	font-family: "Open Sans", sans-serif;
+	font-size: 42px;
+	font-weight: 100;
+	margin: 0 0 0 24px;
+}
+.pricing-table .price h2 span {
+	font-family: "Raleway", sans-serif; 
+}
+.pricing-table .price h2 span.dollar {
+	font-size: 18px;
+	font-weight: 100; 
+	position: absolute;
+	left: -20px;
+	top: 5px;
+}
+
+.pricing-table .price h2 span.month {
+	font-size: 11px;
+	font-weight: 400; 
+	position: absolute;
+	left: 5px;
+	bottom:-12px;
+}
+.pricing-table .price p {
+	line-height: normal;
+	font-weight: 200;
+	margin: 0;
+	padding:0;
+}
+
+.package {}
+
+.fa.fa-check {}
+
+.btn.btn-general.btn-yellow {}
+
+.pricing-table.black {}
+
+.btn.btn-general.btn-white {}
