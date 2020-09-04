@@ -117,3 +117,19 @@ $(function() {
          time: 2000,
      });
 });
+
+/* =================================
+    Clients
+===================================*/
+$(function () {
+	$("#client-list").owlCarousel({ 
+		items: 6,
+		autoplay: false,
+		smartSpeed: 700,
+		loop: true,
+		autoplayHoverPause: true,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+		dots: false,
+	});
+});
