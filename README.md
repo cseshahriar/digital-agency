@@ -1,2 +1,2 @@
 # Digital Agency
-Software Developer or Web Developer agency website. Build With Django v3
+You can user it for any agency type website lice Software Developer or Web Developer agency website and it's build with Django
