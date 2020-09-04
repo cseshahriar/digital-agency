@@ -1201,7 +1201,30 @@ ul.office-detail li i {
     Google Map
 ===================================*/
 #google-map{}
+#map{
+	height: 600px;
+	width: 100%;
+}
 .map{
 	height: 600px;
 	width: 100%;
+}
+.map iframe {
+	width: 100%;
+	height: 100%;
+}
+
+/* =================================
+    Footer
+===================================*/
+footer {
+	background: #212226;
+	padding: 30px;
+}
+footer p {
+	color: #fff;
+	line-height: 20px;
+}
+footer p span {
+	color: #f4c613; 
 }
