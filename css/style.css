@@ -225,12 +225,15 @@ section {
 /* =================================
     content boxes
 ===================================*/
-.context-box-lg {
+.content-box-lg {
 	padding: 120px 0;
 }
 
-.context-box-md {
+.content-box-md {
 	padding: 100px 0;
+}
+.content-box-sm {
+	padding: 60px 0;
 }
 
 /* =================================
@@ -528,7 +531,7 @@ ul.social-list li a:hover {
 	background-attachment: fixed;
 }
 
-#statement .context-box-lg {
+#statement .content-box-lg {
 	background: rgba(0, 0, 0, .3);
 	/* overlay for image upper text */
 }
@@ -996,7 +999,7 @@ ul.social-list li a:hover {
 	background-size: cover;
 }
 
-#stats .context-box-md {
+#stats .content-box-md {
 	background: rgba(0, 0, 0, 0.8);
 }
 
