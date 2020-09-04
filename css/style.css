@@ -1201,7 +1201,7 @@ ul.office-detail li i {
     Google Map
 ===================================*/
 #google-map{}
-#map{
+.map{
 	height: 600px;
 	width: 100%;
 }
