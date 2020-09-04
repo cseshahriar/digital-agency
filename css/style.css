@@ -232,6 +232,7 @@ section {
 .content-box-md {
 	padding: 100px 0;
 }
+
 .content-box-sm {
 	padding: 90px 0;
 }
@@ -1052,18 +1053,91 @@ ul.social-list li a:hover {
 /* =================================
     lients
 ===================================*/
-#clients .horizontal-heading{
+#clients .horizontal-heading {
 	margin-bottom: 30px;
-} 
-#client-list{
+}
+
+#client-list {
 	padding: 45px 0 0 0;
 }
+
 .client {
 	padding: 0 10px;
 	max-width: 150px;
-	margin: 0 auto; 
-	line-height: 100px; /* logo veticle align center */
+	margin: 0 auto;
+	line-height: 100px;
+	/* logo veticle align center */
 }
-.client img{
-	display: inline-block !important; /* logo veticle align center */ 
+
+.client img {
+	display: inline-block !important;
+	/* logo veticle align center */
+}
+
+
+/* =================================
+    Blog
+===================================*/
+#blog {
+	background: #f4f4f4;
+}
+
+.blog-left p {
+	margin: 25px 0;
+}
+
+#blog-btn a {
+	margin: 0;
+}
+
+.blog-post {
+	background: #fff;
+	padding: 20px;
+	-webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 6px;
+}
+
+.blog-post h4 {
+	line-height: 40px;
+	margin: 0;
+}
+
+.blog-post > p {
+	/* blog fist p */
+	line-height: 24px;
+	margin: 0;
+	font-weight: 300;
+}
+
+.blog-post a {
+	display: inline-block;
+	margin-top: 25px;
+	text-transform: uppercase;
+	font-family: "Raleway", sans-serif;
+	color: #f4c613;
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: none;
+	-webkit-transition: all 400ms linear;
+	transition: all 400ms linear;
+}
+
+.blog-post a:hover,
+.blog-post a:focus {
+	color: #212226;
+}
+
+.blog-post .post-meta {
+	border-top: 1px solid #e0e0e0;
+	margin-top: 50px;
+	padding-top: 10px;
+}
+
+.blog-post .post-meta p {
+	font-size: 12px;
+	font-family: "Raleway", sans-serif;
+	line-height: 24px;
+	font-weight: 500;
+	margin: 0;
 }
