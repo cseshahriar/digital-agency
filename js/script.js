@@ -133,3 +133,21 @@ $(function () {
 		dots: false,
 	});
 });
+
+
+/* =================================
+    Google Map
+===================================*/
+$(function() {
+	var addressString = 'House Number 148, Road Number 3, Section 7, Mirpur, Dhaka, BD';
+	
+	var myLatLong = {lat:23.7966302, lng:90.3606038}; 
+	
+	// render 
+	var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 15, center: myLatLong
+	});
+	
+  	// The marker, positioned at Uluru
+  	var marker = new google.maps.Marker({position: myLatLong, map: map}); 
+});

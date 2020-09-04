@@ -1196,3 +1196,12 @@ ul.office-detail li i {
 #contact-right form textarea.form-control {
 	min-height: 164px;
 }
+
+/* =================================
+    Google Map
+===================================*/
+#google-map{}
+#map{
+	height: 600px;
+	width: 100%;
+}
