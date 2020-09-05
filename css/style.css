@@ -18,9 +18,9 @@
 html,
 body {
 	height: 100%;
-}
+} 
 
-body {
+body { 
 	background: #212226;
 }
 
@@ -192,6 +192,16 @@ ul.navbar-nav > li > a:hover, ul.navbar-nav > li > a:focus {
 .white-nav-top ul.navbar-nav > li > a:hover, .white-nav-top ul.navbar-nav > li > a:focus {
 	color: #f4c613;
 	background: #fff;
+}
+
+/* scroll */
+.white-nav-top ul.navbar-nav > li.active > a {
+	color: #f4c613 !important; 
+	font-weight: 500;   
+}
+.active { 
+	color:#f4c613 !important;
+	font-weight: 500; 
 }
 /* =================================
     Home Content

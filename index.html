@@ -39,7 +39,7 @@
 	
 </head>
 
-<body>
+<body> 
 
 	<!-- Preloader -->
 	<div id="preloader">
@@ -49,7 +49,7 @@
 	
 	<!-- Navbar -->
 	<header>
-		<nav class="navbar fixed-top navbar-expand-lg">  
+		<nav class="navbar fixed-top navbar-expand-lg">
 			<div class="container-fluid">
 			    <div class="site-nav-wrapper">
 			    
@@ -64,14 +64,14 @@
 					<!-- Main Menu -->   
 					<div class="container">
 						<div class="collapse navbar-collapse"> 
-							<ul class="navbar-nav ml-auto">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#team">Team</a></li>
-								<li><a href="#services">Services</a></li>
-								<li><a href="#portfolio">Work</a></li>
-								<li><a href="#blog">Blog</a></li>
-								<li><a href="#contact">Contact</a></li>
+							<ul class="navbar-nav ml-auto" id="main-menu">
+								<li><a class="menu-item active" href="#home">Home</a></li> 
+								<li><a class="menu-item" href="#about">About</a></li>
+								<li><a class="menu-item" href="#team">Team</a></li>
+								<li><a class="menu-item" href="#services">Services</a></li>
+								<li><a class="menu-item" href="#portfolio">Work</a></li>
+								<li><a class="menu-item" href="#blog">Blog</a></li>
+								<li><a class="menu-item" href="#contact">Contact</a></li> 
 							</ul>
 						</div>
 					</div>
@@ -84,7 +84,7 @@
 
 
 	<!-- Home -->
-	<section id="home">
+	<section id="home" class="scrollspy">
 		<!-- Background video -->
 		<video id="home-bg-video" poster="videos/solo.jpg" autoplay loop muted>
 			<source src="videos/solo.mp4" type="video/mp4">
@@ -124,7 +124,7 @@
 	<!-- /Home -->
 
 	<!-- About Section-->
-	<section id="about">
+	<section id="about" class="scrollspy">
 		<!-- about part 01-->
 		<div id="about-01">
 			<div class="content-box-lg">
@@ -213,7 +213,7 @@
 	<!-- /About Section-->
 
 	<!-- Team section -->
-	<section id="team">
+	<section id="team" class="scrollspy">
 		<div class="content-box-lg">
 			<div class="container">
 
@@ -391,7 +391,7 @@
 	<!-- /Team section -->
 
 	<!-- Statement -->
-	<section id="statement">
+	<section id="statement" class="scrollspy">
 		<div class="content-box-lg">
 			<div class="container">
 				<div class="row">
@@ -411,7 +411,7 @@
 
 
 	<!-- Services Section -->
-	<section id="services">
+	<section id="services" class="scrollspy">
 		<!-- services 01 -->
 		<div class="services-01">
 			<div class="content-box-lg">
@@ -594,7 +594,7 @@
 	<!-- / Services Section -->
 
 	<!-- Portfolio Section -->
-	<section id="portfolio">
+	<section id="portfolio" class="scrollspy">
 
 		<div class="content-box-md">
 
@@ -720,7 +720,7 @@
 	<!-- /Portfolio Section -->
 
 	<!-- Testimonial -->
-	<section id="testimonials">
+	<section id="testimonials" class="scrollspy">
 		<div class="container">
 			<div class="row">
 
@@ -846,7 +846,7 @@
 
 
 	<!-- Pricing Table -->
-	<section id="pricing">
+	<section id="pricing" class="scrollspy">
 		<div class="content-box-md">
 			<div class="container">
 				<div class="row">
@@ -983,7 +983,7 @@
 
 
 	<!-- Stats -->
-	<section id="stats"> 
+	<section id="stats" class="scrollspy"> 
 		<div class="content-box-md">
 			<div class="container">
 			
@@ -1046,7 +1046,7 @@
 	<!-- Stats/-->
 	
 	<!-- Clients -->
-	<section id="clients">
+	<section id="clients" class="scrollspy">
 		<div class="content-box-sm">
 			<div class="container">
 			
@@ -1113,7 +1113,7 @@
 	<!-- /Clients --> 
 
 	<!-- Blog Section -->
-	<section id="blog">
+	<section id="blog" class="scrollspy">
 			<div class="content-box-md"> 
 				<div class="container">
 					<div class="row">
@@ -1191,7 +1191,7 @@
 	<!-- /Blog Section -->
 	
 	<!-- Contact Section  -->
-	<section id="contact">
+	<section id="contact" class="scrollspy">
 		<div class="content-box-md">
 			<div class="container">
 				<div class="row">
@@ -1353,9 +1353,21 @@
 	<!-- google map -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwxx_2XTGPfhdyifuZ-hcXciwh3yEyvdk"></script>
 
+	<script src="js/simple-scrollspy.min.js"></script> 
+	
 	<!-- custom JS -->
 	<script src="js/script.js"></script> 
-
+	
+	<script>
+		window.onload = function () {
+			scrollSpy('#main-menu', {
+				sectionClass: '.scrollspy',
+				menuActiveTarget: '.menu-item',
+				offset: 100
+			})
+		}
+    </script>
+	
 </body>
 
 </html>
