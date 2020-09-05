@@ -151,3 +151,34 @@ $(function() {
   	// The marker, positioned at Uluru
   	var marker = new google.maps.Marker({position: myLatLong, map: map}); 
 });
+
+/* =================================
+    Navigation
+===================================*/
+$(function() {
+	
+	// show/hide nav on page load 
+	showHideNav(); 
+	
+	$(window).scroll(function() {
+		// show/hide nav on page load 
+		showHideNav(); 
+	});
+	
+	// function 
+	function showHideNav() {
+		if( $(window).scrollTop() > 50 ) {
+			// Show white nav
+			$("nav").addClass('white-nav-top'); 
+			
+			// dark logo
+			$('.navbar-brand img').attr("src", "img/logo/logo-dark.png");
+		} else {
+		    // Hide white nav 
+			$("nav").removeClass('white-nav-top'); 
+			// white logo
+			$('.navbar-brand img').attr("src", "img/logo/logo.png");
+		}
+	}
+	
+});
