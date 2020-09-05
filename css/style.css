@@ -147,13 +147,50 @@ section {
 /* =================================
     Navbar
 ===================================*/
+header {}
 .site-nav-wrapper {
 	width: 100%; 
 	display: -webkit-box; 
 	display: -ms-flexbox; 
 	display: flex;
+	padding: 0 85px;
+}
+.navbar {
+	padding: 35px 0 20px 0;
+}
+.navbar-brand {
+	padding: 13px 15px;
+}
+ul.navbar-nav > li > a {
+	font-family: "Raleway", sans-serif;
+	color: #fff; 
+	font-size: 13px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px; 
+    padding: .5rem 1rem;
+	text-decoration: none;
+} 
+ul.navbar-nav > li > a:hover, ul.navbar-nav > li > a:focus {
+/*	background: #000;*/ 
+	background: #f4c613; 
 }
 
+/* white navigation */
+.white-nav-top {
+	background: #fff; 
+	padding: 10px 0;
+	-webkit-box-shadow: 0 8px 6px -9px #999;
+	box-shadow: 0 8px 6px -9px #999;
+	z-index:2;
+}
+.white-nav-top ul.navbar-nav > li > a {
+	color: #212226;
+}
+.white-nav-top ul.navbar-nav > li > a:hover, .white-nav-top ul.navbar-nav > li > a:focus {
+	color: #f4c613;
+	background: #fff;
+}
 /* =================================
     Home Content
 ===================================*/
