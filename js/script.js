@@ -111,18 +111,18 @@ $(function () {
 /* =================================
     Counter Up
 ===================================*/
-$(function() {
-	 $('.counter').counterUp({
-         delay: 10,
-         time: 2000,
-     });
+$(function () {
+	$('.counter').counterUp({
+		delay: 10,
+		time: 2000,
+	});
 });
 
 /* =================================
     Clients
 ===================================*/
 $(function () {
-	$("#client-list").owlCarousel({ 
+	$("#client-list").owlCarousel({
 		items: 6,
 		autoplay: false,
 		smartSpeed: 700,
@@ -138,63 +138,76 @@ $(function () {
 /* =================================
     Google Map
 ===================================*/
-$(function() {
+$(function () {
 	var addressString = 'House Number 148, Road Number 3, Section 7, Mirpur, Dhaka, BD';
-	
-	var myLatLong = {lat:23.7966302, lng:90.3606038}; 
-	
+
+	var myLatLong = {
+		lat: 23.7966302,
+		lng: 90.3606038
+	};
+
 	// render 
 	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 15, center: myLatLong
+		zoom: 15,
+		center: myLatLong
 	});
-	
-  	// The marker, positioned at Uluru
-  	var marker = new google.maps.Marker({position: myLatLong, map: map}); 
+
+	// The marker, positioned at Uluru
+	var marker = new google.maps.Marker({
+		position: myLatLong,
+		map: map
+	});
 });
 
 /* =================================
     Navigation
 ===================================*/
-$(function() {
-	
+$(function () {
+
 	// show/hide nav on page load 
-	showHideNav(); 
-	
-	$(window).scroll(function() {
+	showHideNav();
+
+	$(window).scroll(function () {
 		// show/hide nav on page load 
-		showHideNav(); 
+		showHideNav();
 	});
-	
+
 	// function 
 	function showHideNav() {
-		if( $(window).scrollTop() > 50 ) {
+		if ($(window).scrollTop() > 50) {
 			// Show white nav
-			$("nav").addClass('white-nav-top'); 
-			
+			$("nav").addClass('white-nav-top');
+
 			// dark logo
 			$('.navbar-brand img').attr("src", "img/logo/logo-dark.png");
+
+			// show back to top 
+			$("#back-to-top").fadeIn();
 		} else {
-		    // Hide white nav 
-			$("nav").removeClass('white-nav-top'); 
+			// Hide white nav 
+			$("nav").removeClass('white-nav-top');
 			// white logo
 			$('.navbar-brand img').attr("src", "img/logo/logo.png");
+
+			// hide back to top  
+			$("#back-to-top").fadeOut();
 		}
 	}
-	
+
 });
 
 
 // Smoth Scrolling 
-$(function() { 
-	$(".smooth-scroll").click(function(event) {
+$(function () {
+	$(".smooth-scroll").click(function (event) {
 		event.preventDefault();
-		
+
 		// get section id like #about, #service, #worl, #team and etc. 
-		var section_id = $(this).attr("href"); 
-		
+		var section_id = $(this).attr("href");
+
 		$("html, body").animate({
 			scrollTop: $(section_id).offset().top - 64
 		}, 1250, "easeInOutExpo");
-		
+
 	});
 });
