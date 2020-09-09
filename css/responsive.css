@@ -1,0 +1,16 @@
+/* =================================
+    Theme: Digital Creative Agency
+    Author: Shahriar Hosen <https://github.com/cseshahriar>
+===================================*/
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Medium  devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Small  devices (Portrait Tablets and Small desktops) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/*  Extra Small  devices (Landscape Phone and Portrait Tablets) */
+@media (max-width: 767px) {}
