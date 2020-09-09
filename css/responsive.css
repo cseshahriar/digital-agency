@@ -126,11 +126,13 @@
 	}
 	.blog-post .post-meta {
     	margin-top: 20px;
-	}
+	} 
 	.blog-post .post-meta p {
     	line-height: 14px;
 	}
 }
 
 /*  Extra Small  devices (Landscape Phone and Portrait Tablets) */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+	
+}
