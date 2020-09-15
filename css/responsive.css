@@ -136,5 +136,103 @@
 
 /*  Extra Small  devices (Landscape Phone and Portrait Tablets) */
 @media (max-width: 767px) {
+	.verticle-heading h2 {
+    	margin: 0 0 0 35px;
+	}
+	#home-heading h1 {
+		font-size: 41px; 
+	}
+	#home-text p {
+		font-size: 15px; 
+	}
+	.btn-general {
+		padding: 8px 35px 8px 35px;
+		font-size: 10px; 
+	}
+	.about-item {
+    	margin-bottom: 20px;
+	}
+	#tech-statement h3 {
+		font-size: 22px; 
+	}
+	.service .icon {
+    	text-align: left !important;
+	}
+	/* services tabs */
+	#services-tabs .tab-bg {
+		padding: 10px;
+		min-height: 300px;
+	} 
+	.service-tab p {
+    	line-height: 20px;
+    	margin-bottom:8px;
+	}
+	.service-tab h2 {
+		font-size: 26px;
+		margin-bottom: 8px;
+	}
+	.service-tab h3 {
+		font-size: 26px;
+    	margin-bottom: 10px;
+	}
+	#isotop-filters button {
+    	margin-right: 30px;
+	}
 	
+	/* services ta */
+	.r-tabs-accordion-title { 
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.r-tabs-accordion-title a {
+		font-family: "Raleway", sans-serif;
+		font-size: 13px;
+		color: #212226;
+		text-transform: uppercase;
+		font-weight: 400;
+		padding: 0;
+		text-decoration: none;
+	}
+	.r-tabs-accordion-title.r-tabs-state-active a {
+		color: #f4c613;
+		font-weight: 700;
+		border-bottom: 3px solid #f4c613;
+		padding-bottom: 5px;
+		-webkit-transition: border-color 300ms linear;
+		transition: border-color 300ms linear; 
+	}
+	#testimonial-slider {
+    	top: -100px;
+	}
+	.pricing-table {
+    	margin-bottom: 30px;
+	}
+	.pricing-table .price p {
+		margin-top: 30px;
+	}
+	.pricing-table .price h2 {
+		margin:  0 0 0 6px;
+		font-size: 35px; 
+	}
+	}
+	.stats-item {
+		margin-bottom: 30px;
+	}
+	.blog-post {
+		margin-bottom: 15px;
+	}
+	.blog-post h4 {
+    	line-height: 24px;
+    	margin: 0;
+    	font-size: 18px;
+	}
+	.blog-post a {
+		margin-top: 15px;
+	}
+	.blog-post .post-meta {
+    	margin-top: 20px;
+	} 
+	.blog-post .post-meta p {
+    	line-height: 14px;
+	}
 }
