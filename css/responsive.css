@@ -7,9 +7,11 @@
 @media (min-width: 1200px) and (max-width: 1299px) {
 	
 	/* naigation */
-	.site-nav-wrapper {
-		padding: 0 20px;
-	}
+	
+		.site-nav-wrapper {
+			padding: 0 20px;
+		}
+	 
 }
 
 /* Medium  devices (desktops, 992px and up) */
