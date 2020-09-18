@@ -139,6 +139,17 @@ $(function () {
 		nav: true,
 		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		dots: false,
+		responsive : {
+			0 : {
+				items: 3
+			},
+			480 : {
+				items: 3
+			},
+			768 : {
+				items: 6
+			}
+		}
 	});
 });
 

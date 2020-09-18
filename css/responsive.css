@@ -37,7 +37,7 @@
 	}
 }
 
-/* Small  devices (Portrait Tablets and Small desktops) */
+/* Medium  devices Tablets (Portrait Tablets and Small desktops) */
 @media (min-width: 768px) and (max-width: 991px) {
 	/* Generic css */
 	.verticle-heading h2{
@@ -134,7 +134,60 @@
 	}
 }
 
+
 /*  Extra Small  devices (Landscape Phone and Portrait Tablets) */
+@media (max-width: 480px) {
+	#home-heading h1 {
+		font-size: 18px;
+	}	
+	#home-text p {
+		font-size: 11px;
+		line-height: 16px;
+		margin: 8px 10px 25px 10px;
+	}
+	.verticle-heading h2 {
+  		font-size: 22px;
+	}
+	.about-item {
+    	margin-bottom: 20px;
+	}
+	div#about-right {
+    	margin-top: 20px;
+	}
+	#tech-statement h3 {
+    	font-size: 14px;
+	}
+	.services-01 img {
+    	/* margin: 120px 0; */
+    	margin: 0 auto;
+	}
+	.service {
+		text-align: center;
+	}
+	div.icon.text-right {
+    	text-align: center !important;
+		margin-bottom: 15px;
+	}
+	#isotop-filters {
+		text-align: center !important;
+	}
+	#isotop-filters button {
+    	margin-right: 20px !important;
+	}	
+	.testimonail h3 {
+		font-size: 12px;
+		padding-right: 14px;
+	}
+	.testimonail .stats {
+		font-size: 16px;
+	}
+	.blog-post {
+    	margin-top: 20px;
+	}
+}
+
+
+/*  Small  devices (Landscape Phone and Portrait Tablets) */
 @media (max-width: 767px) {
 	.verticle-heading h2 {
     	margin: 0 0 0 35px;
@@ -236,3 +289,4 @@
     	line-height: 14px;
 	}
 }
+
